@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EierfarmBl", "EierfarmBl\EierfarmBl.csproj", "{B380DB5B-F11D-4500-9DA7-F48ADDCD8786}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EierfarmUi", "EierfarmUi\EierfarmUi.csproj", "{CCEBD461-9D35-45B3-BC7F-F198510C61A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B380DB5B-F11D-4500-9DA7-F48ADDCD8786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B380DB5B-F11D-4500-9DA7-F48ADDCD8786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B380DB5B-F11D-4500-9DA7-F48ADDCD8786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B380DB5B-F11D-4500-9DA7-F48ADDCD8786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCEBD461-9D35-45B3-BC7F-F198510C61A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCEBD461-9D35-45B3-BC7F-F198510C61A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCEBD461-9D35-45B3-BC7F-F198510C61A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCEBD461-9D35-45B3-BC7F-F198510C61A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7407572D-B949-4C20-BFD6-D9E94CD1E717}
+	EndGlobalSection
+EndGlobal
