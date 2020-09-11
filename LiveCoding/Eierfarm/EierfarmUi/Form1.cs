@@ -19,12 +19,27 @@ namespace EierfarmUi
             InitializeComponent();
         }
 
-        private void btnNeu_Click(object sender, EventArgs e)
+        private void btnNeuesHuhn_Click(object sender, EventArgs e)
         {
             Huhn huhn = new Huhn("Neues Huhn");
 
             cbxTiere.Items.Add(huhn);
             cbxTiere.SelectedItem = huhn;
+        }
+
+        private void btnNeueGans_Click(object sender, EventArgs e)
+        {
+            Gans gans = new Gans("Neue Gans");
+
+            cbxTiere.Items.Add(gans);
+            cbxTiere.SelectedItem = gans;
+        }
+
+        private void btnSchnabletier_Click(object sender, EventArgs e)
+        {
+            Schnabeltier tier = new Schnabeltier() { Name = "Neues Schnabeltier" };
+            cbxTiere.Items.Add(tier);
+            cbxTiere.SelectedItem = tier;
         }
 
         private void cbxTiere_SelectedIndexChanged(object sender, EventArgs e)
@@ -34,22 +49,23 @@ namespace EierfarmUi
 
         private void btnFuettern_Click(object sender, EventArgs e)
         {
-            Huhn huhn = cbxTiere.SelectedItem as Huhn; //SaveCast - liefert null, wenn Cast fehlschlägt
-            if (huhn != null)
+            IEiLeger tier = cbxTiere.SelectedItem as IEiLeger; //SaveCast - liefert null, wenn Cast fehlschlägt
+            if (tier != null)
             {
-                huhn.Fressen();
-                pgdTier.SelectedObject = huhn;
+                tier.Fressen();
+                pgdTier.SelectedObject = tier;
             }
         }
 
         private void btnEiLegen_Click(object sender, EventArgs e)
         {
-            Huhn huhn = cbxTiere.SelectedItem as Huhn;
-            if (huhn!=null)
+            IEiLeger tier = cbxTiere.SelectedItem as IEiLeger;
+            if (tier != null)
             {
-                huhn.EiLegen();
-                pgdTier.SelectedObject = huhn;
+                tier.EiLegen();
+                pgdTier.SelectedObject = tier;
             }
         }
+
     }
 }

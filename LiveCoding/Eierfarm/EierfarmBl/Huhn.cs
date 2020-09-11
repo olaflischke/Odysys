@@ -7,17 +7,16 @@ using System.Threading.Tasks;
 
 namespace EierfarmBl
 {
-    public class Huhn
+    public class Huhn : Gefluegel // : Vererbung, gesprochen "ist ein"
     {
 
-        public Huhn(string name)
+        public Huhn(string name) : base(name)
         {
-            this.Name = name;
             this.Gewicht = 1000;
 
         }
 
-        public void Fressen()
+        public override void Fressen()
         {
             if (this.Gewicht < 3000)
             {
@@ -26,7 +25,7 @@ namespace EierfarmBl
             }
         }
 
-        public void EiLegen()
+        public override void EiLegen()
         {
             if (this.Gewicht > 1500)
             {
@@ -39,9 +38,6 @@ namespace EierfarmBl
             }
         }
 
-        public string Name { get; set; } //= "Neues Huhn";
-        public double Gewicht { get; set; }
 
-        public List<Ei> Eier { get; set; } = new List<Ei>(); //Auto-Property-Initializer
     }
 }
