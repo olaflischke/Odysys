@@ -10,7 +10,7 @@ namespace EierfarmBl
     public class Ei
     {
         // Konstruktor - wird ausgeführt wenn: Ei ei = new Ei();
-        public Ei()
+        public Ei(IEiLeger mutter)
         {
             Random random = new Random();
             // Ei-Gewicht zufällig erzeugen
@@ -18,6 +18,7 @@ namespace EierfarmBl
             //_gewicht = 55; geht, aber besser nicht machen
 
             this.Farbe = (EiFarbe)random.Next(Enum.GetNames(typeof(EiFarbe)).Length);   // DirectCast - schmeißt Exception, wenn Cast fehlschlägt!
+            this.Mutter = mutter;
         }
 
         // Lokale Variable
@@ -59,6 +60,7 @@ namespace EierfarmBl
 
         public EiFarbe Farbe { get; set; }
 
+        public IEiLeger Mutter { get; set; }
     }
 
     public enum EiFarbe

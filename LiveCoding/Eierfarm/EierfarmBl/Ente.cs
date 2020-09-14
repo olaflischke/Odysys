@@ -17,7 +17,7 @@ namespace EierfarmBl
         {
             if (this.Gewicht > 1250)
             {
-                Ei ei = new Ei();
+                Ei ei = new Ei(this);
                 this.Eier.Add(ei);
                 this.Gewicht -= ei.Gewicht;
             }

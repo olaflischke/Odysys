@@ -17,6 +17,8 @@ namespace EierfarmUi
         public frmEierfarm()
         {
             InitializeComponent();
+
+            cbxTiere.DisplayMember = "Name";
         }
 
         private void btnNeuesHuhn_Click(object sender, EventArgs e)

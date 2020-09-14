@@ -10,6 +10,7 @@ namespace EierfarmBl
         public List<Ei> Eier { get; set; } = new List<Ei>();
 
         public double Gewicht { get; set; }
+        public string Name { get; set; }
 
         public abstract void EiLegen();
 

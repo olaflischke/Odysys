@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
   <Class Name="EierfarmBl.Huhn">
     <Position X="1" Y="6.25" Width="1.5" />
     <TypeIdentifier>
@@ -8,7 +8,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="EierfarmBl.Gans">
-    <Position X="4.75" Y="6.25" Width="1.5" />
+    <Position X="3.75" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
       <FileName>Gans.cs</FileName>
@@ -51,6 +51,20 @@
       <FileName>Schwein.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="EierfarmBl.Ente">
+    <Position X="6.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Ente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EierfarmBl.Ei">
+    <Position X="8.5" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAEAAAAAAAAAAABAAAAgAAAEAAAAAAAEBAAAAAg=</HashCode>
+      <FileName>Ei.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Interface Name="EierfarmBl.IEiLeger">
     <Position X="6.5" Y="1" Width="1.5" />
     <TypeIdentifier>
@@ -58,5 +72,12 @@
       <FileName>IEiLeger.cs</FileName>
     </TypeIdentifier>
   </Interface>
+  <Enum Name="EierfarmBl.EiFarbe" Collapsed="true">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAgAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Ei.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

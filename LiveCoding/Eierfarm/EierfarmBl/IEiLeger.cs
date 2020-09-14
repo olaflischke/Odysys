@@ -9,6 +9,7 @@ namespace EierfarmBl
     {
         List<Ei> Eier { get; set; }
         double Gewicht { get; set; }
+        string Name { get; set; }
 
         void EiLegen();
         void Fressen();

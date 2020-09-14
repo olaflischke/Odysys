@@ -13,6 +13,10 @@ namespace EierfarmBl
             this.Name = name;
         }
 
-        public string Name { get; set; }
+        // ToString überschrieben
+        //public override string ToString()
+        //{
+        //    return this.Name;
+        //}
     }
 }

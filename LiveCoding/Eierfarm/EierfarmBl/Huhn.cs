@@ -30,7 +30,7 @@ namespace EierfarmBl
             if (this.Gewicht > 1500)
             {
                 // Klasse Instanzvariable = new Konstruktor([Parameter]);
-                Ei ei = new Ei();
+                Ei ei = new Ei(this);
                 // Das Ei der Liste hinzufügen
                 this.Eier.Add(ei);
                 // Das Gewicht des Eis vom Gewicht des Huhns abziehen
